@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'UnifrakturMaguntia', serif;
+}
+
+.lightbox {
+    z-index: 1001; /* Ensure the lightbox appears above other elements */
+}
+
+header {
+    z-index: 1000; /* Ensure the header is below the lightbox */
+}
+
+#header.hidden {
+    transform: translateY(-100%);
+}
+
+#topBtn {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#topBtn.opacity-100 {
+    opacity: 1;
+}
+
+#lightbox {
+    z-index: 1001; /* Ensure the lightbox appears above other elements */
+}
+
+#lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid white;
+}
+
+h1, h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bg-gray-900 {
+    background-color: #1a202c;
+}
+
+.bg-gray-800 {
+    background-color: #2d3748;
+}
