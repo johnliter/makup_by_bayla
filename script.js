@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     lightbox.style.display = 'none';
 
-    var galleryImages = document.querySelectorAll('.gallery img');
+    var galleryImages = document.querySelectorAll('.lightbox img');
     galleryImages.forEach(function (img) {
         img.addEventListener('click', function () {
             lightbox.style.display = 'flex';
